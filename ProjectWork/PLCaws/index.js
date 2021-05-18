@@ -36,7 +36,13 @@ const server = http.createServer(function (request, response) {
                     var v2 = json.values[i].v;
                     var v12 = v2.toString().replace(/"/," ");
                     var bool_value = v12 == "true" ? 1 : 0
-                    point.floatField('Silos1_Level1', bool_value)    
+                    if (bool_value == 1){
+                        var sl1 = 1
+                    }
+                    else {
+                        console.log("Parse conversion ERROR S1 L1")
+                    }
+                    point.floatField('Silos1_Level1', sl1)    
                     break;
                 case 'PLCsim.plc2.Silos1_Level2':
                     var v2 = json.values[i].v;
