@@ -26,8 +26,8 @@ A local server taks all the necessary data from the PLC and send them to a serve
 
 ### **Overview**
 
-![image](Assets/Images/Overview_diagram.PNG)
+![image](/Assets/Images/Overview_diagram.PNG)
 
 ### **System Context Diagram**
 
-![image](Assets/Images/System_Context_Diagram.PNG)
+![image](/Assets/Images/System_Context_Diagram.PNG)
