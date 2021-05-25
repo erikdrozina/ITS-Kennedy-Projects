@@ -55,7 +55,7 @@ To embrace the Agile methodology we used and created our user stories, short tex
 An example could be: *As a controller I want to see the level of the content inside the silo to manage the refueling and the valves.* 
 
 Or: *As a manager I want to manage all the silos remotely because I don't want to be there physically*
-### **Trello**image
+### **Trello**
 At the end we created a Trello kanban to manage and visualize all the tasks we needed to do to complete the project.
 ![Image](Assets/Images/Trello.png)
 
