@@ -29,22 +29,22 @@ In our initial brainstorming, we gathered as much information as possible about 
 During this phase we created some diagram to better understand the project that can be found below.
 ### **Overview**
 
-![image](Assets/Images/Overview_diagram.png)
+![Image](Assets/Images/Overview_diagram.png)
 
 ### **System Context Diagram**
 
-![image](Assets/Images/System_Context_Diagram.png)
+![Image](Assets/Images/System_Context_Diagram.png)
 
 ## **Project Plannning**
 After the initial draft we focused on planning the whole project and more specifically we broke down the project into small tasks creating a Work Breakdown Structure specifying if a task will depend on another task.
 
 ### **Work Breakdown Structure**
-![image](Assets/Images/WBS.png)
+![Image](Assets/Images/WBS.png)
 
 The WBS helped us to create the Gantt Diagram to better visualize the project over time.
 
 ### **Gantt Diagram**
-![image](Assets/Images/Gantt.png)
+![Image](Assets/Images/Gantt.png)
 
 ## **Agile Method**
 
@@ -55,6 +55,28 @@ To embrace the Agile methodology we used and created our user stories, short tex
 An example could be: *As a controller I want to see the level of the content inside the silo to manage the refueling and the valves.* 
 
 Or: *As a manager I want to manage all the silos remotely because I don't want to be there physically*
-### **Trello**
+### **Trello**image
 At the end we created a Trello kanban to manage and visualize all the tasks we needed to do to complete the project.
-![image](Assets/Images/Trello.png)
+![Image](Assets/Images/Trello.png)
+
+## **General Overview**
+After the initial brainstorming phase this is the result that represents how each component of this project communicate with each other.
+![Image](Assets/Images/Arch.png)
+Let's start with the PLC!
+
+## **PLC**
+
+For the PLC we worked on Simatic Manger S7 for the PLC logic and then with WinCC Flexible for the connection and the graphical environment.
+
+The first step was to simulate the PLC envirimageonment because we weren't able to test the project on a physical PLC.
+Then the object was to recreate all the logic in different blocks using languages like AWL and KOP.
+
+<!-- TODO: add block image -->
+![Yet to be added](Assets/Images/Blocks.png)
+
+As said in the introduction each silo has 8 senors for the level of the content and outside it has 2 sensors: one for the temperature and one for the humidity. Then it has 2 valves: one that insert the liquid/solid and one that remove what's inside.
+
+We thought to block the insertion of the content when the highest sensor was triggered and to block the discharge when the first sensor is no longer triggered by the content inside.
+In this case is not possible to empty the silo so we added a second button that allows to discharge all the content that's inside so the silo can be easily emptied from its content and filled with another material.
+
+![Yet to be added](Assets/Images/PLC_silo_screen.png)
