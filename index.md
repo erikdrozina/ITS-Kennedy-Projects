@@ -79,4 +79,14 @@ As said in the introduction each silo has 8 senors for the level of the content 
 We thought to block the insertion of the content when the highest sensor was triggered and to block the discharge when the first sensor is no longer triggered by the content inside.
 In this case is not possible to empty the silo so we added a second button that allows to discharge all the content that's inside so the silo can be easily emptied from its content and filled with another material.
 
+<!-- TODO: add volume and mass -->
+
 ![Yet to be added](Assets/Images/PLC_silo_screen.png)
+
+If a worker would like to have an easy to read overview there is a page where you can easily see all the silos and their level, the content inside and to operate on the silo you can just click the one desired in the overview.
+
+![Yet to be added](Assets/Images/PLC_overview.png)
+
+Then in the "More Info" page there is a more detailed overview with the status of each silo, their content and a graph that shows the variation of the content's level inside each silo.
+
+![Yet to be added](Assets/Images/PLC_moreinfo.png)
