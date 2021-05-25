@@ -8,11 +8,11 @@
 - [Marika Fontana](https://github.com/MarikaFontana36)
 - [Francesco Sartori](https://github.com/Francesco2501)
 
-## Files
+### **Files**
 
 All the files can be found in the [Github repo](https://github.com/erikdrozina/ITS-Kennedy-Projects/tree/master/ProjectWork) or in the release section ready to use.
 
-## Introduction
+### **Introduction**
 
 Design and implementation of software to monitor the level of the content of 7 silos in an industrial plant in North Dakota.
 
@@ -24,6 +24,10 @@ All the sensors are connected to a PLC that compute and elaborate all the data.
 
 A local server taks all the necessary data from the PLC and send them to a server in the cloud where they are displayed in real time.
 
-## Images
+### **Overview**
 
-![image](Assets/Images/Calcolo_Massa.PNG)
+![image](Assets/Images/Overview_diagram.PNG)
+
+### **System Context Diagram**
+
+![image](Assets/Images/System_Context_Diagram.PNG)
