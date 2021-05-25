@@ -1,5 +1,5 @@
 var redis = require('redis')
-//enstamblish communication with influx db
+//estamblish communication with influx db
 const {InfluxDB} = require('@influxdata/influxdb-client')
 
 var clientRedis = redis.createClient({
