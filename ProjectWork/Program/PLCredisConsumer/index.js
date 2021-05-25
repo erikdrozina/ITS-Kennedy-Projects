@@ -1,4 +1,5 @@
 var redis = require('redis')
+//enstamblish communication with influx db
 const {InfluxDB} = require('@influxdata/influxdb-client')
 
 var clientRedis = redis.createClient({
@@ -14,26 +15,29 @@ clientRedis.on("error", function (error) {
     console.error(error);
 });
 
+//influxdb token for client authentication
 const token = '0O6oVm1F43S49XcXdnV6saRIskASovJ9GakXWbHSzWEC6h2FCPWuZx79B6jEQJX3bqBEs1STr-agdMs32HnGCQ=='
 const org = 'agridiqu'
 const bucket = 'plcdata'
 
+//connection string
 const client = new InfluxDB({url: 'http://34.244.201.108:8086', token: token})
 
 const {Point} = require('@influxdata/influxdb-client')
 const writeApi = client.getWriteApi(org, bucket)
 writeApi.useDefaultTags({host: 'host1'})
 
+//create point with measurement name
 const point = new Point('plcsensordata')
 
 read()
 
 function read() {
-    clientRedis.rpop(["datatest"], function (err, reply) {
-       
-        var json = JSON.parse(reply)
-        if (json != null) {
-            
+    //get and remove the first left element in Redis list
+    clientRedis.lpop(["datatest"], function (err, reply) {      
+        var json = JSON.parse(reply) //JSON parse
+        //if the information is present it proceeds with the acquisition
+        if (json != null) {         
             for(var i = 0; i < json.values.length; i++) {
                 switch (json.values[i].id) {
                     case 'PLCsim.plc2.Silos1_Level1':
@@ -214,17 +218,21 @@ function read() {
                         console.log('INSERT ERROR OR MISSING DATA')
                 }
             }      
+            //write data into influx db
             writeApi.writePoint(point)
+            //pauses the function for five seconds
             setTimeout(read, 5000)      
             console.log("Popped item", json);
-
         }else {
             console.log("EMPTY QUEUE, WAITING DATA")
             setTimeout(read, 5000)           
-        }
-                
+        }               
     });  
 }
+
+
+
+
 
 
 
