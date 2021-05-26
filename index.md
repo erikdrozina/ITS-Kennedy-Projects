@@ -145,10 +145,14 @@ And finally we can see the dashboard with levels and temperatures of our silos!!
 
 ![Image](Assets/Images/Dashboard2.png)
 
-## **Videos**
+## **Videos and other resources**
 
 [PLC screens video](https://drive.google.com/file/d/1I3xHPpDjElAjN_FbResrFo8RaqEMjt6i/view?usp=sharing)
 
 [node.js program video](https://drive.google.com/file/d/1rUglDWgRD7MFyLW-kwNDboo4jd7W1qIF/view?usp=sharing)
+
+[Group 4 Drive](https://drive.google.com/drive/folders/1VRa2P5FWcjjLrArR-4iCQNfflfzZANKe)
+
+[Trello](https://trello.com/b/WZdFSFju/diqu-agridiqu-gruppo-4)
 
 ## Thanks for your attention!
