@@ -64,12 +64,15 @@ Or: _As a manager I want to manage all the silos remotely because I don't want t
 ### **Trello**
 
 At the end we created a Trello kanban to manage and visualize all the tasks we needed to do to complete the project.
+
 ![Image](Assets/Images/Trello.png)
 
 ## **General Overview**
 
 After the initial brainstorming phase this is the result that represents how each component of this project communicate with each other.
+
 ![Image](Assets/Images/Arch.png)
+
 Let's start with the PLC!
 
 ## **PLC**
