@@ -105,7 +105,7 @@ There is two script in node, one received the Silos data from KepServerEx API ga
 
 We create a web server who remains listening until the data arrives and convert it to string data format to write it into Redis list
 
-![Image](Assets/Images/primoscript.png)
+![Image](Assets/Images/primoscript.PNG)
 
 ### **Redis**
 Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries.
