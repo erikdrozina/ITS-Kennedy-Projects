@@ -99,3 +99,7 @@ Then in the "More Info" page there is a more detailed overview with the status o
 ![Image](Assets/Images/PLC_moreinfo.png)
 
 More languages are available just by ressing the top right button and the software will cycle to English, Italian, Spanish, German and French.
+
+## **Cloud**
+
+For the cloud part we have created an EC2 instance by connecting it to our security group to control both incoming and outgoing traffic
