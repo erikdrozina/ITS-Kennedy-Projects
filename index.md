@@ -10,7 +10,7 @@
 
 ### **Files**
 
-All the files can be found in the [Github repo](https://github.com/erikdrozina/ITS-Kennedy-Projects/tree/master/ProjectWork) or in the release section ready to use.
+All the files can be found on the [Github](https://github.com/erikdrozina/ITS-Kennedy-Projects/releases) or in the release section ready to use.
 
 ### **Introduction**
 
@@ -104,6 +104,7 @@ Then in the "More Info" page there is a more detailed overview with the status o
 More languages are available just by ressing the top right button and the software will cycle to English, Italian, Spanish, German and French.
 
 ## **Script in Node js**
+
 There is two script in node, one received the Silos data from KepServerEx API gateway which contain the data of the seven level and the temperatures of each Silos.
 
 We create a web server who remains listening until the data arrives and convert it to string data format to write it into Redis list
@@ -111,12 +112,12 @@ We create a web server who remains listening until the data arrives and convert 
 ![Image](Assets/Images/primoscript.PNG)
 
 ### **Redis**
+
 Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries.
 
 In our case we use them for temporarly save the data in case of connection timeout with AWS Ec2 machines witch is installed influx db v2.0.
 When the connection down, every 10 seconds the web server continue to receive data from KepServer simulator and write them in redis.
-If the connection is established the second script promptly consumes all the data accumulated on redis up to that moment. 
-
+If the connection is established the second script promptly consumes all the data accumulated on redis up to that moment.
 
 ## **Cloud**
 
