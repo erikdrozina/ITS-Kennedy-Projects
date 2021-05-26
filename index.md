@@ -121,4 +121,26 @@ If the connection is established the second script promptly consumes all the dat
 
 ## **Cloud**
 
-For the cloud part we have created an EC2 instance by connecting it to our security group to control both incoming and outgoing traffic
+### **Amazon Web Services**
+
+For the cloud part we have created an EC2 instance by connecting it to our security group to control both incoming and outgoing traffic.
+
+![Image](Assets/Images/ec2.png)
+
+Thanks to our security group we can choose port 8086 to connect to influxdb/chronograf.
+
+![Image](Assets/Images/SecurityGroup.png)
+
+Our EC2 instance has got a public IP address, but it changes each time it is shut down and turned on again so it's important to remember to change the destination on the index.js file.
+
+![Image](Assets/Images/Ec2IP.png)
+
+### **InfluxDB and Chronograf**
+
+Opening a new search page and connecting to the IP address of the EC2 instance followed by port 8086, we can connect to InfluxDB and view the chronograf dashboards.
+
+![Image](Assets/Images/Dashboard.png)
+
+And finally we can see the dashboard with levels and temperatures of our silos!!!
+
+![Image](Assets/Images/Dashboard2.png)
