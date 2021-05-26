@@ -79,7 +79,7 @@ For the PLC we worked on Simatic Manger S7 for the PLC logic and then with WinCC
 The first step was to simulate the PLC envirimageonment because we weren't able to test the project on a physical PLC.
 Then the object was to recreate all the logic in different blocks using languages like AWL and KOP.
 
-![Image](Assets/Images/Blocks.png)
+![Image](Assets/Images/Blocks.PNG)
 
 As said in the introduction each silo has 8 senors for the level of the content and outside it has 2 sensors: one for the temperature and one for the humidity. Then it has 2 valves: one that insert the liquid/solid and one that remove what's inside.
 
