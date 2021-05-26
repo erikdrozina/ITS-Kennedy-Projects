@@ -144,3 +144,11 @@ Opening a new search page and connecting to the IP address of the EC2 instance f
 And finally we can see the dashboard with levels and temperatures of our silos!!!
 
 ![Image](Assets/Images/Dashboard2.png)
+
+## **Videos**
+
+[PLC screens video](https://drive.google.com/file/d/1I3xHPpDjElAjN_FbResrFo8RaqEMjt6i/view?usp=sharing)
+
+[node.js program video](https://drive.google.com/file/d/1rUglDWgRD7MFyLW-kwNDboo4jd7W1qIF/view?usp=sharing)
+
+## Thanks for your attention!
