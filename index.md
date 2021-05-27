@@ -158,27 +158,35 @@ And finally we can see the dashboard with levels and temperatures of our silos!!
 ### **Gallery**
 
 ![Image](Assets/Images/Calcolo_Massa.PNG)
+
 Block used to calculate mass
 
 ![Image](Assets/Images/Controllo_Sensori.PNG)
+
 Block used to check the sensor level
 
 ![Image](Assets/Images/Valvole_PLC.PNG)
+
 Block used to animate the valves in the HMI
 
 ![Image](Assets/Images/Valvola_Ingresso.PNG)
+
 Block used to insert into the silo
 
 ![Image](Assets/Images/Valvola_Uscita.PNG)
+
 Block used to remove from the silo
 
 ![Image](Assets/Images/DB_Silo.PNG)
+
 DataBlock used to store silo information
 
 ![Image](Assets/Images/DB_Massa.PNG)
+
 DataBlock used to store mass information
 
 ![Image](Assets/Images/DB_Volume.PNG)
+
 DataBlock used to store volume information
 
 ## Thanks for your attention!
